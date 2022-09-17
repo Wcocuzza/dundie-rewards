@@ -30,6 +30,7 @@ setup(
     long_description=read_requirements("README.md"),
     long_description_content_type="text/markdown",
     author="Wallace Cocuzza",
+    python_requires=">=3.8",
     packages=find_packages(),
     entry_points={
         "console_scripts": [
