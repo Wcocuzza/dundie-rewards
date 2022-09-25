@@ -27,11 +27,12 @@ setup(
     name="dundie",
     version="0.1.0",
     description="Reward Point System Dunder Mifflin",
-    long_description=read_requirements("README.md"),
+    long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Wallace Cocuzza",
     python_requires=">=3.8",
     packages=find_packages(),
+    include_package_data=True,
     entry_points={
         "console_scripts": [
             "dundie = dundie.__main__:main"
@@ -40,6 +41,6 @@ setup(
     install_requires=read_requirements("requirements.txt"),
     extras_require={
         "test": read_requirements("requirements.test.txt"),
-        "dev": read_requirements("requirements.dev.txt"),
+        "dev": read_requirements("requirements.dev.txt")
     },
 )
