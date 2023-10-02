@@ -6,4 +6,9 @@ setup(
     description="Reward Point System for Dunder Mifflin",
     author="Wallace",
     packages=find_packages(),
+    entry_points={
+        "console_scripts": [
+            "dundie = dundie.__main__:main",
+        ]
+    }
 )
