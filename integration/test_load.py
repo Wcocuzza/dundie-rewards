@@ -1,6 +1,7 @@
 import pytest
 from subprocess import check_output
 
+
 @pytest.mark.integration
 @pytest.mark.medium
 def test_load():
