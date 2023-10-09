@@ -15,6 +15,9 @@ ipython:
 test:
 	@.venv/bin/pytest -s
 
+testci:
+	@.venv/bin/pytest/pytest -v --junitxml=test-result.xml
+
 watch:
 	# @.venv/bin/ptw
 	@ls **/*.py | entr pytest
