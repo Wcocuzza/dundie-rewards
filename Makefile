@@ -1,4 +1,4 @@
-.PHONY: install virtualenv ipython clean test
+.PHONY: install virtualenv ipython clean test pflake8
 
 install:
 	@echo "Installing for dev environment"
@@ -12,11 +12,14 @@ virtualenv:
 ipython:
 	@.venv/bin/ipython
 
+lint:
+	@.venv/bin/pflake8
+
 test:
 	@.venv/bin/pytest -s
 
 testci:
-	@.venv/bin/pytest/pytest -v --junitxml=test-result.xml
+	@.venv/bin/pytest -v --junitxml=test-result.xml
 
 watch:
 	# @.venv/bin/ptw
