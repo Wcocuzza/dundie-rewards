@@ -1,0 +1,30 @@
+{
+  "people": {
+    "wallace@email.com": {
+      "name": "Wallace",
+      "role": "developer",
+      "dept": "System",
+      "active": true
+    },
+    "matheus@email.com": {
+      "name": "Matheus",
+      "role": "developer",
+      "dept": "System",
+      "active": true
+    }
+  },
+  "balance": {
+    "wallace@email.com": 500
+  },
+  "movement": {
+    "wallace@email.com": [
+      {"date": "", "value": 0}
+    ]
+  },
+  "user": {
+    "wallace@email.com": {
+      "password": "123456abc",
+      "is_admin": true
+    }
+  }
+}
